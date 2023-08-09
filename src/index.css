@@ -1,0 +1,92 @@
+.width {
+    width: 90%;
+}
+
+.font-12 {
+    font-size: 12px;
+    margin: 0;
+    display: none;
+}
+
+.form-third button {
+    margin: 5px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.form-third button img {
+    height: 50px;
+    width: 50px;
+}
+
+.forgot {
+    cursor: pointer;
+}
+
+.drop {
+    position: relative;
+    width: 180px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    margin: 8px 0 !important;
+}
+
+
+.dropItem {
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px 0;
+    background: #212529;
+    right: 25px;
+    text-align: center;
+    display: none;
+    box-shadow: 0 0 3px #4a5159;
+    top: 60px;
+}
+
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loader {
+    width: 30%;
+    height: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #ededed;
+    box-shadow: 0 0 3px #0000004a;
+    position: relative;
+    overflow: hidden;
+}
+.loading {
+    width: 40%;
+    height: 100%;
+    background: #1a008e;
+    border: 0.5px solid #0000004a;
+    border-radius: 20px;
+    position: absolute;
+    left: -100%;
+    animation: loader 2s infinite;
+}
+@keyframes loader {
+    0% {
+        left: -50%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .width {
+        width: 75%;
+    }
+}
